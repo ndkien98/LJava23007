@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Input like Bootstrap</title>
+<style>
+  /* Reset default input styles */
+  input {
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* Custom input styling */
+  .custom-input {
+    display: inline-block;
+  }
+
+  .custom-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+
+  .custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.custom-select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.custom-select select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+</style>
+</head>
+<body>
+  <div class="custom-input">
+    <input type="text" id="name" name="name" required>
+    <label for="name" class="input-label">Your Name</label>
+  </div>
+
+  <div class="custom-input">
+    <input type="email" id="email" name="email" required>
+    <label for="email" class="input-label">Your Email</label>
+  </div>
+
+  <div class="custom-select">
+    <select>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+  </div>
+  
+</body>
+</html>

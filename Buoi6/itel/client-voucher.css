@@ -1,0 +1,295 @@
+/* commom */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary-color-border: rgb(156, 152, 152);
+
+    --width-input-filter:200px;
+    --height-input-filter:11px;
+
+    --background: rgb(250,251,253);
+    --background-content:rgb(255,255,255);
+    --color-text: 4f4f4f;
+    --height:900px;
+    --border-background: rgb(236,236,236);
+
+}
+
+.custom-a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+body{
+    background-color: var(--background);
+}
+
+/* tổng quát */
+
+.sidebar-waper{
+    background-color: var(--background-content);
+    width: 13%;
+    float: left;
+    height: var(--height);
+    border: 1px solid var(--border-background);
+}
+
+.content-wraper{
+    background-color: rgb(239, 246, 246);
+    width: 86.6%;
+    height: var(--height);
+    float: left;
+}
+
+.footer{
+    background-color: rgb(152, 143, 160);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+
+/* sidebar */
+
+.sidebar li{
+    list-style: none;
+    margin: 40px 30px;
+} 
+
+.sidebar li i{
+    margin-right: 7px;
+}
+.sidebar li a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* content */
+.content-wraper .header{
+    background-color: var(--background-content);
+    height: 40px;
+    border: 1px solid var(--border-background);
+    margin-left: 3px;
+}
+
+/* menu */
+.menu{
+    height: 80px;
+    background-color: rgb(218, 201, 196);
+    padding-left: 2%;
+    padding-top: 1%;
+}   
+ 
+/* breadcrumb-menu */
+.breadcrumb-menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.breadcrumb-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb-menu li:not(:first-child):before{
+    content: "/";
+    margin-left: 3px;
+    margin-right: 4px;
+}
+
+/* content menu */
+.content-menu{
+    margin-top: 2%;
+}
+.content-menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.content-menu li:not(:first-child) {
+    margin-left: 20px;
+}
+
+
+/*--- Header - content --- */
+.title-content{
+    border: 1px solid var(--primary-color-border);
+    margin-bottom: 5px;
+    height: 50px;
+    background-color: aqua;
+}
+
+.title-text {
+    padding-left: 30px;
+    padding-top: 10px;
+    float: left;
+    width: 45%;
+    background-color: blueviolet;
+}
+
+.switch-wraper{
+    float: right;
+    width: 50%;
+    background-color: blue;
+}
+/* switch */
+    /* b1 tạo không gian ngoài của switch */
+    .switch{
+        position: relative; /* thêm cái này mới di chuyển qua trái phải cái hình tròn được */
+        display: inline-block;
+        width: 35px;
+        height: 20px;
+
+        margin-top: 11px;
+        margin-right: 74px;
+        float: right;
+    }
+
+    /* b2 ẩn đi checkbox để làm gia hình tròn di chuyển, tuy display none nhưng nó vẫn có thể click vào checkbox */
+    .switch-input{
+        display: none;
+    }
+
+    /* b3 tạo vùng nền chính của switch */
+    .switch-label {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgb(220, 217, 223);
+        border-radius: 15px;
+        cursor: pointer; /* hiển thị bàn tay khi di chuột vào */
+        transition: background-color 0.3s;
+
+    }
+
+    /* b4 thay đổi màu nền khi click vào checkbox -> switch bật */
+    .switch-input:checked + .switch-label{
+        background-color: rgb(93, 174, 231);
+    }
+
+    /* b5 tạo hình tròn của switch */
+    .switch-label::before{
+        position: absolute; /* thêm cái này mới di chuyển qua trái phải cái hình tròn được */
+        top: 0;
+        left: 0;
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    /* b6 di chuyển hình tròn */
+    .switch-input:checked + .switch-label::before{
+        left: calc(100% - 50%);
+    }
+
+/* --- filter --- */
+.filter-content{
+    clear: both; /* Không chiếm chỗ của title-content */
+
+    height: 150px;
+    background-color: chocolate;
+}
+
+.grid{
+    background-color: crimson;
+    height: 140px;
+    width: 30%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    vertical-align: top; /* Thêm thuộc tính này để không bị vỡ */
+}
+
+.data{
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+.custom-input{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(186, 182, 182);
+    display: inline-block;
+    width: var(--width-input-filter);
+    height: var(--height-input-filter);
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.custom-select{
+    display: inline-block;
+    width: var(--width-input-filter);
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(186, 182, 182);
+    padding: 10px;
+    margin-left: 10px;
+
+}
+
+.input-point{
+    margin-left: 8%;
+    display: inline-block;
+}
+
+/*---main conten---*/
+
+/* table data */
+.main-content{
+    width: 100%;
+    height: 420px;
+    background-color: bisque;
+}
+
+.table-data{
+    width: 100%;
+    height: 400px;
+    text-align: left;
+}
+
+.table-data th{
+    background-color: blueviolet;
+}
+
+.table-data th,td{
+    padding-left: 15px;
+}
+
+/* ---pagination---*/
+
+.pagination{
+    float: right;
+    width: 400px;
+}
+.page, .total-page {
+    display: inline-block;
+    list-style: none;
+}
+
+.page li {
+    display: inline-block;
+    list-style: none;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}

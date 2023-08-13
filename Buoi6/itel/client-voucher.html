@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e63a084ca3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="client-voucher.css">
+</head>
+<body>
+    <div class="sidebar-waper">
+        <div class="logo">
+            <img src="icon/logo.png" alt="logo" width="100%">
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li><a class="custom-a" href="#"><i class="fa-solid fa-user-group"></i> Khách Hàng</a></li>
+                <li><a class="custom-a" href="#"><i class="fa-regular fa-comment"></i> Phản Hồi</a></li>
+                <li><a class="custom-a"  href="#"><i class="fa-solid fa-ranking-star"></i> Hạng hội viên</a></li>
+                <li><a class="custom-a"  href="#"><i class="fa-regular fa-floppy-disk"></i> Chính sách tích điểm</a></li>
+                <li><a class="custom-a"  href="#"><i class="fa-solid fa-thumbtack"></i> Chính sách tiêu điểm</a></li>
+                <li><a class="custom-a"  href="#"><i class="fa-regular fa-user"></i> Quản trị viên</a></li>
+                <li><a class="custom-a"  href="#"><i class="fa-solid fa-lock"></i> Phân quyền</a></li>
+                <li><a class="custom-a"  href="#"><i class="fa-solid fa-chart-line"></i> Chu kì xếp hạng </a></li>
+                <li><a class="custom-a"  href="#"><i class="fa-solid fa-tag"></i> Chiến dịch</a></li>
+                <li><a class="custom-a"  href="#"><i class="fa-regular fa-newspaper"></i> Báo cáo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-wraper">
+        <div class="header">
+
+        </div>
+        <div class="menu">
+            <div class="breadcrumb-menu">
+                <ul>
+                    <li><a href="#">Khách hàng</a></li>
+                    <li><a href="#">Alisa Do</a></li>
+                </ul>
+            </div>
+            <div class="content-menu">
+                <ul>
+                    <li><a class="custom-a" href="#">Thông tin cơ bản</a></li>
+                    <li><a class="custom-a" href="#">Lịch sử tích điểm</a></li>
+                    <li><a class="custom-a" href="#">Lịch sử tiêu điểm</a></li>
+                    <li><a class="custom-a" href="#">Phản hồi</a></li>
+                    <li><a class="custom-a" href="#">Voucher</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title-content">
+                <div class="title-text">
+                    <span>Danh sách</span>
+                </div>
+                <div class="switch-wraper">
+                    <div class="switch">
+                        <input type="checkbox" id="switch" class="switch-input">
+                        <label for="switch" class="switch-label"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-content">
+                <div class="grid">
+                    <div class="data">
+                        <label class="custome-label" for="name">Tên</label>
+                        <input class="custom-input" type="text"  id="name" placeholder="Nhập tên">
+                    </div>
+                    <div class="data">
+                        <label >Loại</label>
+                        <select class="custom-select">
+                            <option value="">Vip</option>
+                            <option value="">Thường</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="data">
+                        <label >Danh mục</label>
+                        <select class="custom-select">
+                            <option value="">Đồ ăn</option>
+                            <option value="">Đồ uống</option>
+                            <option value="">Vé xem phim</option>
+                            <option value="">Voucher nhà hàng</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="data">
+                        <label>Điểm</label>
+                        <div class="input-point">
+                            <input type="number" class="custom-input" style="width: 50px;" placeholder="Từ">
+                            <span>-</span>
+                            <input type="number" class="custom-input" style="width: 50px;" placeholder="Đến">
+                        </div>
+                    </div>
+                    <div class="data">
+                        <label for="name">Trạng thái</label>
+                        <select class="custom-select">
+                            <option value="">Hoạt động</option>
+                            <option value="">Không hoạt động</option>
+                            <option value="">Hủy</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <table class="table-data">
+                    <tr>
+                        <th>Voucher</th>
+                        <th>Danh mục</th>
+                        <th>Hạn sử dụng</th>
+                        <th>Trạng thái</th>
+                        <th>Tiền</th>
+                        <th>Điểm</th>
+                        <th>Loại</th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <td>Phụ Kiện Công Nghệ 360</td>
+                        <td>Đồ ăn</td>
+                        <td>30-10-2020</td>
+                        <td>Hoạt động</td>
+                        <td>10000</td>
+                        <td>100</td>
+                        <td>Vip</td>
+                        <td><a style="text-decoration: none; color: blue;" href="">Đổi</a></td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Highland-Mua 1 tặng 1 Trà sen vàng</td>
+                        <td>Đồ ăn</td>
+                        <td>30-10-2020</td>
+                        <td>Hoạt động</td>
+                        <td>10000</td>
+                        <td>100</td>
+                        <td>Thường</td>
+                        <td><a style="text-decoration: none; color: blue;" href="">Đổi</a></td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>SallyHomey Life is betiful-Giảm 20K</td>
+                        <td>Đồ ăn</td>
+                        <td>30-10-2020</td>
+                        <td>Không hoạt động</td>
+                        <td>10000</td>
+                        <td>100</td>
+                        <td>Thường</td>
+                        <td> </td>
+                    </tr>
+        
+                    <tr>
+                        <td>VIP-Gofl</td>
+                        <td>Đồ ăn</td>
+                        <td>30-10-2020</td>
+                        <td>Không hoạt động</td>
+                        <td>20000</td>
+                        <td>100</td>
+                        <td>Thường</td>
+                        <td> </td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td>Newshopvn-Giảm 50k</td>
+                        <td>Đồ ăn</td>
+                        <td>30-10-2020</td>
+                        <td>Không hoạt động</td>
+                        <td>20000</td>
+                        <td>100</td>
+                        <td>Thường</td>
+                        <td> </td>
+                    </tr>
+                   </table>
+        </div>
+    </div>
+    <nav class="pagination">
+        <ul class="page">
+          <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-less-than"></i></a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-greater-than"></i></a></li>
+        </ul>
+        <select class="total-page">
+            <option>Trang 1/10</option>
+            <option>Trang 2/10</option>
+            <option>Trang 3/10</option>
+            <option>Trang 4/10</option>
+            <option>Trang 5/10</option>
+            <option>Trang 6/10</option>
+            <option>Trang 7/10</option>
+            <option>Trang 8/10</option>
+            <option>Trang 9/10</option>
+            <option>Trang 10/10</option>
+        </select>
+    </nav>
+    <div class="footer">
+        footer
+    </div>
+
+</body> 
+</html>

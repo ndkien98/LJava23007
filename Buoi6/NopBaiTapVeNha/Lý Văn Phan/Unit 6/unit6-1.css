@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#sidebar{
+    list-style: none;
+    width: 15%;
+    line-height: 50px;
+    margin-left: 10px;
+}
+#sidebar li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+.header{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    position: relative;
+}
+.bar{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+.user{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+#manu-content{
+    margin-top: -550px;
+    margin-left: 230px;
+    border: 1px solid rgb(206, 204, 204);
+    background-color:white;
+}
+#manu{
+    line-height: 30px;
+    background-color: white;
+    border-top: 1px solid rgb(233, 231, 231);
+    border-bottom: 1px solid rgb(233, 231, 231);
+}
+#manu ul{
+    list-style: none;
+}
+#manu ul li a{
+    text-decoration: none;
+    color: black;
+}
+#manu ul li a:hover{
+    text-decoration: underline;
+}
+.cust{
+    padding-left: 22px;
+}
+#manu ul li{
+    display: inline-block;
+    padding-left: 20px;
+}
+#content{
+    background-color: white;
+    border: 1px solid rgb(233, 231, 231);
+    border-radius: 5px;
+    width: 98%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.title-content{
+    background-color: white;
+    border-bottom: 1px solid rgb(231, 231, 233);
+    height: 50px;
+    line-height: 50px;
+}
+.title-text{
+    font-weight: 700;
+    padding-left: 10px;
+}
+.switch-wraper{
+    margin-top: -46px;
+}
+.filter{
+    background-color:white;
+    line-height: 30px;
+    height: 100px;
+}
+.grid{
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 50px;
+}
+.grid-data{
+    padding-top: -20px;
+    line-height: 50px;
+}
+.data{
+    line-height: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.data td{
+    border-top: 1px solid rgb(231, 231, 233);
+    border-bottom: 1px solid rgb(231, 231, 233);
+}
+.data tr td p{
+    padding-left: 10px;
+}
+.data tr:nth-child(1){
+    background-color:rgb(243, 218, 171);
+    font-weight: 700;
+}
+
+.data-content{
+    background-color: white;
+}
+.data tr:hover{
+    background-color: rgb(204, 202, 202);
+}
+.page {
+    padding-top: 20px;
+    padding-left: 50%;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+.page a{
+    text-decoration: none;
+    padding: 8px 16px;
+    color: black;
+    transition: background-color .3s;
+}
+.page a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.total-page{
+    border: 1px solid rgb(231, 231, 233);
+    border-radius: 4px;
+    height: 25px;
+    width: 100px;
+}
+.footer{
+    background-color:#83a1db;
+    height: 100px;
+    line-height: 100px;
+    font-size: small;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+.switch{
+    position: relative; /* thêm cái này mới di chuyển qua trái phải cái hình tròn được */
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+
+    margin-top: 11px;
+    margin-right: 74px;
+    float: right;
+}
+
+/* b2 ẩn đi checkbox để làm gia hình tròn di chuyển, tuy display none nhưng nó vẫn có thể click vào checkbox */
+.switch-input{
+    display: none;
+}
+
+/* b3 tạo vùng nền chính của switch */
+.switch-label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(220, 217, 223);
+    border-radius: 15px;
+    cursor: pointer; /* hiển thị bàn tay khi di chuột vào */
+    transition: background-color 0.3s;
+
+}
+
+/* b4 thay đổi màu nền khi click vào checkbox -> switch bật */
+.switch-input:checked + .switch-label{
+    background-color: green;
+}
+
+/* b5 tạo hình tròn của switch */
+.switch-label::before{
+    position: absolute; /* thêm cái này mới di chuyển qua trái phải cái hình tròn được */
+    top: 0;
+    left: 0;
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color:orange;
+    border-radius: 50%;
+}
+
+/* b6 di chuyển hình tròn */
+.switch-input:checked + .switch-label::before{
+    left: calc(100% - 50%);
+}

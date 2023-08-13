@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* phần siderbar */
+.sidebar{
+    width: 15%;
+    height: 140vh;
+    background-color: white;
+    float:left;
+    border: 2px solid pink;
+}
+.sidebar img{
+    width: 100%;
+}
+.sidebar-menu li{
+    list-style: none;
+}
+.sidebar-link{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 10%;
+}
+
+
+
+
+
+
+
+/* phần header */
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border: 2px solid pink;
+}
+.icon{
+    font-size: 30px;
+    opacity: 0.5;
+    float: left;
+    padding-top: 16px;
+    padding-left: 15px;
+}
+.icon-2{
+    width: 55px;
+    height: 55px;
+    background-color: blueviolet;
+    z-index: -1;
+    float: right;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.icon-user{
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+
+
+
+/* phần menu */
+
+
+
+.menu{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    border: 1px solid pink;
+}
+.menu label{
+    padding-left: 3%;
+    display: inline-block;
+    padding-top: 25px;
+    opacity: 0.5;
+   
+}
+
+.menu-item li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 3%;
+    padding-top: 30px;
+}
+.menu-item-link{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+}
+.menu-item-link:hover{
+    color: blue;
+}
+
+
+
+/* Hover Link Text Line */
+.menu-item-link::after{
+    content: " ";
+    height: 3px;
+    width: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+ }
+ .menu-item-link{
+    position: relative;
+    display: block;
+    padding: 14px 0px;
+ }
+ .menu-item-link:hover::after{
+    transform: scaleX(1);
+ }
+
+
+
+
+
+
+/* phần content */
+.content{
+    margin-top: 15px;
+    width: 82%;
+    margin-left: 17%;
+    height: 111.9vh;
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+
+
+/* phần title  */
+
+
+
+.title h2{
+    height: 50px;
+    padding-left: 25px;
+    padding-top: 20px;
+    float: left;
+
+}
+.title p{
+    float: left;
+    font-size: 20px;
+    padding-top: 23px;
+    padding-left: 70%;
+    
+}
+.title{
+    height: 80px;
+    background-color: white;
+    border: 1px solid pink;
+    background-color: rgb(245, 215, 215);
+    padding-top: 15px;
+}
+
+
+ /* bật tắt */
+.switch-toggle{
+    width: 100px;
+    height: 50px;
+    appearance: none;
+    background-color: aqua;
+    border-radius: 26px;
+    position: relative;
+}
+.switch-toggle::before{
+    content: " ";
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+.switch-toggle:checked{
+    background-color: blue;
+}
+.switch-toggle:checked::before{
+    left:45px;
+}
+.wrapper{
+    float: right;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+
+
+/* phần form */
+
+
+
+form{
+    height: 120px;
+    padding-left: 6%;
+    line-height: 30px;
+    padding-top: 20px;
+}
+.form-1 label{
+    padding-right: 30px;
+    font-weight: bold;
+}
+.form-1 input{
+    width: 200px;
+    height: 30px;
+    margin-right:80px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-1 select{
+    width: 200px;
+    height: 30px;
+    margin-right: 100px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0.7;
+}
+.form-2{
+    margin-top: 30px;
+}
+.form-2 label{
+    padding-right: 30px;
+    font-weight: bold;
+}
+.form-2 select{
+    width: 200px;
+    height: 30px;
+    margin-right: 80px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0.7;
+}
+
+
+
+
+
+/* phần table data */
+
+
+
+
+.table-data table{
+    width: 100%;
+    line-height: 50px;
+}
+.table-data table,tr,td,th{
+    border-bottom: 2px solid pink;
+    border-collapse: collapse;
+    padding: 15px;
+   
+}
+.table-data th{
+    text-align: left;
+    background-color: rgb(245, 215, 215);
+}
+
+
+
+
+/* phần page naumber */
+
+
+
+.page{
+    margin-top: 20px;
+}
+.page-controller{
+    float:right;
+    padding-right: 30px;
+}
+.controller{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    opacity: 0.7;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.controller:hover{
+    background-color: blue;
+}
+.controller-nav{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size:20px;
+    opacity: 0.5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.controller-nav:hover{
+    background-color: blue;
+}
+.page-controller select,option{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+    opacity: 0.7;
+}
+
+/* phần footer */
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: wheat;
+    border: 1px solid pink;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+

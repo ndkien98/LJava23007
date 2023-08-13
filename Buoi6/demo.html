@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+        .page,
+        .total-page {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    
+        .page-item {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    
+        .page-link {
+            display: inline-block;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+        }
+    
+        .total-page {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="pagination">
+        <ul class="page">
+            <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-less-than"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-greater-than"></i></a></li>
+        </ul>
+        <select class="total-page">
+            <!-- ... các thẻ <option> như trong mã gốc ... -->
+                <option>Trang 1/10</option>
+                <option>Trang 2/10</option>
+                <option>Trang 3/10</option>
+                <option>Trang 4/10</option>
+                <option>Trang 5/10</option>
+                <option>Trang 6/10</option>
+                <option>Trang 7/10</option>
+                <option>Trang 8/10</option>
+                <option>Trang 9/10</option>
+                <option>Trang 10/10</option>
+        </select>
+    </nav>
+    
+</body>
+</html>

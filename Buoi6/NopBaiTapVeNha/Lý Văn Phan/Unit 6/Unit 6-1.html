@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 6-1</title>
+    <script src="https://kit.fontawesome.com/e63a084ca3.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="./unit6-1.css">
+<body>
+    <div>
+        <div id="sidebar">
+            <img src="./img/Indochina.png" alt="logo" style="width: 200px;">
+            <ul>
+                <li><i class="fa-solid fa-users"></i><a href="#">Khách hàng</a></li>
+                <li><i class="fa-solid fa-comment"></i><a href="#">Phản hồi</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#">Hạng hội viên</a></li>
+                <li><i class="fa-solid fa-book"></i><a href="#">Chính sách tích điểm</a></li>
+                <li><i class="fa-solid fa-user-secret"></i><a href="#">Quản trị viên</a></li>
+                <li><i class="fa-solid fa-sitemap"></i><a href="#">Phân quyền</a></li>
+                <li><i class="fa-solid fa-crown"></i><a href="#">Chu kỳ xếp hạng</a></li>
+                <li><i class="fa-solid fa-wave-square"></i><a href="#">Chiến dịch</a></li>
+                <li><i class="fa-solid fa-pen-to-square"></i><a href="#">Báo cáo</a></li>
+            </ul>
+        </div>
+        <div id="manu-content">
+            <div class="header">
+                <div class="bar"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+                <div class="user"><a href="#"><i class="fa-solid fa-user"></i></a></div>
+            </div>
+            <div id="manu">
+                <p class="cust">Khách hàng/Alisa Do</p>
+                <ul>
+                    <li><a href="#">Thông tin cơ bản</a></li>
+                    <li><a href="#">Lịch sử tích điểm</a></li>
+                    <li><a href="#">Lịch sử tiêu điểm</a></li>
+                    <li><a href="#">Phản hồi</a></li>
+                    <li><a href="#">Tiêu điểm</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div class="title-content">
+                    <div class="title-text">
+                        <span>Danh sách</span>
+                    </div>
+                    <div class="switch-wraper">
+                        <div class="switch">
+                            <input type="checkbox" id="switch" class="switch-input" checked>
+                            <label for="switch" class="switch-label"></label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter">
+                    <div class="grid">
+                        <div class="grid-data">
+                            <label>Tên</label>
+                            <input type="text" placeholder="Nhập tên">
+                        </div>
+                        <div class="grid-data">
+                            <label>Loại</label>
+                            <select id="type" name="type">
+                                <option>Chọn loại</option>
+                                <option>VIP</option>
+                                <option>Thường</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-data">
+                            <label>Danh mục</label>
+                            <select>
+                                <option>Chọn danh mục</option>
+                                <option>Đồ ăn</option>
+                                <option>Đồ uống</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-data">
+                            <label>Điểm</label>
+                            <input type="text" placeholder="Từ">-
+                            <input type="text" placeholder="Đến">
+                        </div>
+                        <div class="grid-data">
+                            <label>Trạng thái</label>
+                            <select>
+                                <option>Chọn trạng thái</option>
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-content">
+                        <table class="data">
+                            <tr>
+                                <td><p>Voucher</p></td>
+                                <td>Danh mục</td>
+                                <td>Hạn sử dụng</td>
+                                <td>Trạng thái</td>
+                                <td>Tiền</td>
+                                <td>Điểm</td>
+                                <td>Loại</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>Phụ kiện công nghệ 360 Giảm 50K</p></td>
+                                <td>Đồ ăn</td>
+                                <td>30-10-2020</td>
+                                <td>Hoạt động</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>VIP</td>
+                                <td>Đổi</td>
+                            </tr>
+                            <tr>
+                                <td><p>Highland-Mua 1 tặng 1 Trà sen vàng</p></td>
+                                <td>Đồ ăn</td>
+                                <td>30-10-2020</td>
+                                <td>Hoạt động</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>VIP</td>
+                                <td>Đổi</td>
+                            </tr>
+                            <tr>
+                                <td><p>SallyHomely Life is beauteful-Giảm 20K</p></td>
+                                <td>Đồ ăn</td>
+                                <td>30-10-2020</td>
+                                <td>Không hoạt động</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>Thường</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>VIP-Goft</p></td>
+                                <td>Đồ ăn</td>
+                                <td>30-10-2020</td>
+                                <td>Không hoạt động</td>
+                                <td>2000</td>
+                                <td>100</td>
+                                <td>Thường</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>Newshopvn-Giảm 50K</p></td>
+                                <td>Đồ ăn</td>
+                                <td>30-10-2020</td>
+                                <td>Không hoạt động</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>Thường</td>
+                                <td></td>
+                            </tr>
+                        </table>                     
+                </div>
+            </div>
+            <div class="page">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+                <select class="total-page">
+                    <option>Trang 1/10</option>
+                    <option>Trang 2/10</option>
+                    <option>Trang 3/10</option>
+                    <option>Trang 4/10</option>
+                    <option>Trang 5/10</option>
+                    <option>Trang 6/10</option>
+                    <option>Trang 7/10</option>
+                    <option>Trang 8/10</option>
+                    <option>Trang 9/10</option>
+                    <option>Trang 10/10</option>
+                </select>
+              </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2023 by Lyphan</p>
+        </div>
+    </div>
+</body>
+</html>
